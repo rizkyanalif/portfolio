@@ -1,11 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-</head>
-<body>
-    <h1>Portfolio</h1>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio - Rizkyan Alif</title>
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7a18206087.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <a href="" class="navbar-logo">Portfolio</a>
+
+            <div>
+                <div class="navbar-nav">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                </div>
+                <div class="navbar-extra">    
+                        <i class="fa-solid fa-bars" id="hamburger-menu"></i>
+                </div>
+            </div>
+        </nav>
+
+        <section class="home" id="home">
+            <main class="content">
+                <div class="home-image">
+                    <img src="./asset/avatar.jpg" alt="My Photo">
+                </div>
+                <div class="home-text">
+                    <h1>Hi, I'm Rizkyan Alif Malikulsyah</h1>
+                    <p>Hello, my name is Rizkyan Alif Malikulsyah. I'm currently studying at Binus University majoring in Computer Science and specializing in the Intelligent System stream.</p>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/rizkyanalif" target="_blank" rel="noopener noreferrer" class='linkedin-button'>
+                            <i class="fa-brands fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/rizkyanalif" target="_blank" rel="noopener noreferrer" class='github-button'>
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                    </div>
+                    <a href="#about" class="about-button button">About Me</a>
+                </div>
+            </main>
+        </section>
+        
+        <section class="about" id="about">
+            <div class="about-me">
+                <h1>About Me</h1>
+                <p>I have a strong interest in Artificial Intelligence & Machine Learning. I am passionate to develop data-driven solutions to solve real-world problems.</p>
+                <p>During my studies, I have worked on several machine learning projects that allow me apply teoritical concepts to practical implementation and strengthen my skills in data analysis and machine learning.</p>
+                <p>I'm currently looking for internship opportunity in data-related field where i can contribute to impactful projects and gain real-world experience.</p>
+                <a href="#projects" class="projects-button button">My Project</a>
+            </div>
+            <div class="about-skills">
+                <h1>My Skills</h1>
+                <div class="skills">
+                    <div class="skills-skill">Python</div>
+                    <div class="skills-skill">TensorFlow</div>
+                    <div class="skills-skill">Deep Learning</div>
+                    <div class="skills-skill">Scikit-learn</div>
+                    <div class="skills-skill">Machine Learning</div>
+                    <div class="skills-skill">C</div>
+                    <div class="skills-skill">SQL</div>
+                    <div class="skills-skill">Git & GitHub</div>
+                    <div class="skills-skill">OOP</div>
+                    <div class="skills-skill">HTML</div>
+                    <div class="skills-skill">CSS</div>
+                    <div class="skills-skill">JavaScript</div>
+                </div>
+                <a href="#projects" class="projects-button button">My Project</a>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <h1>My Projects</h1>
+
+            <div class="content">
+                <div class="project-image">
+                    <img src="./asset/Project_ML.png" alt="Project 1 (Project ML)">
+                </div>
+
+                <div class="project-info">
+                    <h3>Breast Cancer Survival Prediction</h3>
+                    <p>This is my group project for the Machine Learning course. We developed a model to predict the survival of breast cancer patients using machine learning algorithm.</p>
+                    <a href="https://bcsp-kel5.streamlit.app/" target="_blank" rel="noopener noreferrer" class="view-project button">View Project</a>
+                    <a href="https://github.com/aidennz/Breast-Cancer-Survival-Prediction-App" target="_blank" rel="noopener noreferrer" class="git-project button">
+                        <i class="fa-brands fa-github"></i>
+                        View Source Code
+                    </a>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="project-image">
+                    <img src="./asset/Project_NLP.png" alt="Project 2 (Project NLP)">
+                </div>
+
+                <div class="project-info">
+                    <h3>Sentiment Analysis Project</h3>
+                    <p>This is my group project for the Natural Language Processing course. We developed a sentiment analysis model that classifies YouTube comments as positive, negative, or neutral.</p>
+                    <!-- <a href="" target="_blank" rel="noopener noreferrer" class="view-project button">View Project</a> -->
+                    <a href="https://github.com/rizkyanalif/Youtube-Comment-Classification-Final-Project-NLP" target="_blank" rel="noopener noreferrer" class="git-project button">
+                        <i class="fa-brands fa-github"></i>
+                        View Source Code
+                    </a>
+                </div>
+            </div>
+            
+            <div class="content">
+                <div class="project-image">
+                    <img src="./asset/Project_SE.png" alt="Project 1 (Project NLP)">
+                </div>
+
+                <div class="project-info">
+                    <h3>BinusLife</h3>
+                    <p>This is my group project for the Software Engineering course. BinusLife is a web-based application that made for Binusian. In BinusLife, users can find the nearest Boarding Houses, Restaurants, and Clinics to their campus.</p>
+                    <a href="https://binuslife.netlify.app/" target="_blank" rel="noopener noreferrer" class="view-project button">View Project</a>
+                    <a href="https://github.com/rizkyanalif/AOL_SE" target="_blank" rel="noopener noreferrer" class="git-project button">
+                        <i class="fa-brands fa-github"></i>
+                        View Source Code
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Created by <a href="">Rizkyan Alif</a>. &copy; 2025.</p>
+        </footer>
+        <script src="./script.js"></script>
+    </body>
 </html>
